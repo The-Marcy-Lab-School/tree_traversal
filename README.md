@@ -11,9 +11,9 @@
 2. Write a function, `insert_left` that takes two arguments: a binary tree node and a value. This function should insert a new (with the given value) as the left child of the binary tree node and return the newly inserted node.
   ```python
   t = Node('A')
-  t.insert_left('B')
+  insert_left('B')
   t.left.value == 'B' # true
-  t.insert_left('Z')
+  insert_left(t, 'Z')
   t.left.value == 'Z' # true
   t.left.left.value == 'B' # true
   ``` 
@@ -22,9 +22,9 @@
 
   ```python
   t = Node('A')
-  t.insert_right('C')
+  insert_right(t, 'C')
   t.right.value == 'C' # true
-  t.insert_right('Y')
+  insert_right(t, 'Y')
   t.right.value == 'Y' # true
   t.right.right.value == 'C' # true
   ``` 
